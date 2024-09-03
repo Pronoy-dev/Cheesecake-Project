@@ -44,23 +44,28 @@ const Menu = () => {
         </div>
         {/* title part  */}
 
-        {/* menu card  */}
+        {/* menu card main */}
 
         <div className=" flex justify-evenly items-center mt-9">
+          {/* menu card ======= */}
           {allMenuCard?.map((item) => (
             <div
               className="w-[355px] pl-5 pr-9 pt-[33px] pb-8 shadow-xl text-center rounded-[41px] hover:shadow-2xl hover:shadow-[#4D422C] duration-300  "
               key={item.id}
             >
+              {/* picture ========== */}
               <picture>
                 <img src={item.Img} alt={item.Img} />
               </picture>
+              {/* card title ============= */}
               <h4 className="text-[#1D2729] text-left font-custom_Inika font-bold text-[25px] leading-8 mt-5 ">
                 {item.title}
               </h4>
+              {/* card details ================ */}
               <p className="text-[#555555] text-left font-custom_recursive font-normal text-[13px] leading-8">
                 {item.details}
               </p>
+
               <div className="flex text-[#6A4028] justify-between items-center mt-6 ">
                 <div className="flex items-center">
                   <span className="font-custom_inter font-bold text-[18px] leading-5 text-[#53A623] mb-[-2px] mr-[-2px] ">
